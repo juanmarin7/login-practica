@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css">
+  
+    <title>Inicio de sesion</title>
+    
+ 
+
+</head>
+<body>
+
+  <input id="email" type="email" placeholder="Ingrese Correo">
+  <input id="contra" type="password" placeholder="Ingresa contraseña">
+  <button onclick="registrar()">Enviar</button>
+
+<script src="js/funciones.js"></script>
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+   
+   <script>
+     // Your web app's Firebase configuration
+     var firebaseConfig = {
+       apiKey: "AIzaSyCF0yCOIQrAizynvUA_wCPJjbbJwm8k8P0",
+       authDomain: "login-practica-a08fb.firebaseapp.com",
+       databaseURL: "https://login-practica-a08fb.firebaseio.com",
+       projectId: "login-practica-a08fb",
+       storageBucket: "login-practica-a08fb.appspot.com",
+       messagingSenderId: "917491920308",
+       appId: "1:917491920308:web:b2964fcd210b50543316e1",
+       measurementId: "G-SM7N452FBJ"
+     };
+     // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+     firebase.analytics();
+   </script>
+</body>
+</html>
