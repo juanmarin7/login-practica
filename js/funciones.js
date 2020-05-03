@@ -1,13 +1,14 @@
 function registrar(){
     var email = document.getElementById('email').value;
-    var contra = document.getElementById('c1').value;
+    var c1    = document.getElementById('c1').value;
     
-    firebase.auth().signInWithEmailAndPassword(email, contra).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-      });
+    firebase.auth().createUserWithEmailAndPassword(email, c1).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      
+      // ...
+    });
 }
 
 function log(){
@@ -19,11 +20,11 @@ function log(){
   if(c1 != c2){
 
     alert("Contraseña incorrecta");
-    corr ==  false;
+    corr =  false;
 
   }else{
     
-    corr == true;
+    corr = true;
     
 }
 
