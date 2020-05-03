@@ -1,6 +1,6 @@
 function registrar(){
     var email = document.getElementById('email').value;
-    var contra = document.getElementById('contra').value;
+    var contra = document.getElementById('c1').value;
     
     firebase.auth().signInWithEmailAndPassword(email, contra).catch(function(error) {
         // Handle Errors here.
@@ -9,3 +9,24 @@ function registrar(){
         // ...
       });
 }
+
+function log(){
+
+  var c1 = document.getElementById('c1').value;
+  var c2 = document.getElementById('c2').value;
+  var corr = false;
+ 
+  if(c1 != c2){
+
+    alert("Contraseña incorrecta");
+    corr ==  false;
+
+  }else{
+    
+    corr == true;
+    
+}
+
+
+}
+

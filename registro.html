@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/styles.css">
-  
-    <title>Inicio de sesion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet"> 
     
- 
-
+  
+    <title>Registrarse</title>
+    
 </head>
 <body>
+    <header>
+      <nav><ul>
+        <li><a href="#">Iniciar Sesion</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+        <li><a  href="home.html"></a></li>
+         <li id="acerca"><a href="#">Acerca</a></li> 
+          
+        </ul></nav>
+    </header>
 
+<form act="page">
+  <div class="container">
+    <h1>Registro</h1>
+    <p>Porfavor ingrese los datos para completar el registro</p>
+    <hr>
+
+    <label for="email"><b>Correo</b></label><br>
+    <input id="email" type="text" placeholder="Ingrese Correo" required><br>
+
+    <label for="psw"><b>Contraseña</b></label><br>
+    <input id="c1" type="password" placeholder="Ingrese Contraseña" required><br>
+    
+    <label for="psw-repeat"><b>Verificar Contraseña</b></label><br>
+    <input id="c2" type="password" placeholder="Repetir Contraseña"  required><br>
+    <hr>
+
+   
+    <button onclick="log()" id="submit" type="submit" class="registerbtn">Register</button>
+    <p id="reg">No tienes cuenta? Registrate Aqui <a href="#">Inicia Sesión</a>.</p>    
+  </div>
+  
+  
+</form> 
+
+
+
+
+
+
+
+
+
+<!--<div id="reg">
+  
   <input id="email" type="email" placeholder="Ingrese Correo">
   <input id="contra" type="password" placeholder="Ingresa contraseña">
   <button onclick="registrar()">Enviar</button>
+
+</div>-->
 
 <script src="js/funciones.js"></script>
 
